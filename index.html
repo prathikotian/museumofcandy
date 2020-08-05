@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Museum of Candy">
+    <meta name="title" content="Museum of Candy">
+    <title>Museum of Candy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="master.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-2 px-sm-5" id="nav">
+        <a class="navbar-brand" href="/">CANDY</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hamburger" aria-controls="hamburger" aria-expanded="false" aria-label="Hamburger">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="hamburger">
+          <div class="navbar-nav">
+            <a id="about" class="nav-item nav-link">ABOUT</a>
+            <a class="nav-item nav-link">HISTORY</a>
+            <a class="nav-item nav-link">CONTACT</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="container-fluid px-0 mb-md-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="text-white text-center d-none d-lg-block">
+              <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+              <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+              <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+              <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+              <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+              <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+              <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            </div>
+          </div>
+          <div class="col-lg-6 pr-0">
+            <img class="img-fluid" src="imgs/hand2.png" alt="Museum Of Candy">
+          </div>
+        </div>        
+      </section>
+      <section class="container-fluid px-0">
+        <div class="row align-items-center mb-md-5">
+          <div class="col-md-6 pl-0 order-2 order-md-1">
+            <img class="img-fluid" src="imgs/milk.png" alt="Museum of Candy">
+          </div>
+          <div class="col-md-6 text-center order-1 order-md-2 py-5">
+            <div class="row justify-content-center">
+              <div class="col-10 col-lg-8 blurb">
+                <h2>MUSEUM OF CANDY</h2>
+                <img class="d-none d-lg-inline" src="imgs/lolli_icon.png" alt="">
+                <p class="lead">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center mb-md-5">
+          <div class="col-md-6 text-center py-5">
+            <div class="row justify-content-center">
+              <div class="col-10 col-lg-8 blurb">
+                <h2>MUSEUM OF CANDY</h2>
+                <img class="d-none d-lg-inline" src="imgs/lolli_icon.png" alt="">
+                <p class="lead">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid" src="imgs/gumball.png" alt="Museum of Candy">
+          </div>          
+        </div>
+        <div class="row align-items-center mb-md-5">
+          <div class="col-md-6 pl-0 order-2 order-md-1">
+            <img class="img-fluid" src="imgs/sprinkles.png" alt="Museum of Candy">
+          </div>
+          <div class="col-md-6 text-center order-1 order-md-2 py-5">
+            <div class="row justify-content-center">
+              <div class="col-10 col-lg-8 blurb">
+                <h2>MUSEUM OF CANDY</h2>
+                <img class="d-none d-lg-inline" src="imgs/lolli_icon.png" alt="">
+                <p class="lead">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" charset="utf-8"></script>
+    <script>
+      $(() => {
+        $(document).scroll(() => {
+          var $nav = $("#nav");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+  </body>
+</html>
